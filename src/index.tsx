@@ -1,17 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Switch, Route, BrowserRouter } from 'react-router-dom'
+import 'reset.css'
 
-import routes from './routes'
+import Transactions from './pages/Transactions'
 
-const App = () => (
-  <BrowserRouter>
-    <Switch>
-      {routes.map((route) => (
-        <Route key={route.path} {...route} />
-      ))}
-    </Switch>
-  </BrowserRouter>
-)
+const App = () => <Transactions />
 
 ReactDOM.render(<App />, document.getElementById('root'))
