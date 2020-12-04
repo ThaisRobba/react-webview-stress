@@ -1,15 +1,19 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import dayjs from 'dayjs'
 
 import Text from '../Text'
 import colors from '../../colors'
 import Pizza from './Pizza'
-
+const spin = keyframes`  
+  0% { transform:rotate(0); }
+  100% { transform:rotate(360deg); }
+`
 const ContainerWithIcon = styled.div`
   display: flex;
   flex-direction: row;
   padding: 16px;
+  /* animation: ${spin} 4s linear infinite; */
 `
 
 const GridContainer = styled.div`
