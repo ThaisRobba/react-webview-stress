@@ -4,18 +4,12 @@ import dayjs from 'dayjs'
 
 import Text from '../Text'
 import colors from '../../colors'
+import Pizza from './Pizza'
 
-const IconContainer = styled.div`
+const ContainerWithIcon = styled.div`
   display: flex;
   flex-direction: row;
   padding: 16px;
-`
-
-const Icon = styled.div`
-  padding: 16px;
-  margin-right: 8px;
-  border-radius: 100%;
-  border: 1px solid ${colors.squanchyGray20};
 `
 
 const GridContainer = styled.div`
@@ -39,8 +33,8 @@ const TransactionItem = ({
   status,
 }: TransactionItemProps) => {
   return (
-    <IconContainer>
-      <Icon>🤨</Icon>
+    <ContainerWithIcon>
+      <Pizza />
       <GridContainer>
         <Text bold capitalize>
           {name}
@@ -49,10 +43,9 @@ const TransactionItem = ({
           {dayjs(date).format('DD [de] MMMM')}
         </Text>
         <Text>{amount}</Text>
-
         <Text bold>{status}</Text>
       </GridContainer>
-    </IconContainer>
+    </ContainerWithIcon>
   )
 }
 
