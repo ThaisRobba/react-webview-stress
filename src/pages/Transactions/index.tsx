@@ -33,7 +33,7 @@ const createTransaction = () => {
   }
 }
 
-const mockTransactions = Array.from({ length: 2000 }, createTransaction)
+const mockTransactions = Array.from({ length: 10000 }, createTransaction)
 
 const Transactions = () => {
   const [filter, setFilter] = useState('')
