@@ -7,6 +7,7 @@
     "android": "npx cap open android",
     "build": "rm -rf dist && NODE_ENV=production parcel build src/index.html --no-source-maps && npx cap copy",
     "dev": "npx parcel src/index.html -p 3000 --open",
+    "ionic:serve": "npx parcel src/index.html -p 3000 --open",
     "setup": "yarn install && npx cap update",
     "sync": "npx cap sync"
   },
