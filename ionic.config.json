@@ -1,6 +1,8 @@
 {
   "name": "Stress Test",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "custom",
   "id": "9eea058e"
 }
